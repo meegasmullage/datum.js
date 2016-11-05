@@ -1,15 +1,15 @@
 # DatumJs
 Lightweight library which enables object oriented programming with JavaScript
 
-# How to use
+## How to use
 Simply include [datum.js](https://github.com/meegasmullage/datumjs/blob/master/datum.min.js) in to your project. [samples](https://github.com/meegasmullage/datumjs/blob/master/sample.js)
 
-# Features
+## Features
 - Support multi-level inheritance
 - Enables to access base class via **this.base** property
 
 
-# Methods
+## Methods
 - **define**: *define a class*
 ```javascript
 var Mobile = datum.define({
@@ -50,7 +50,7 @@ var mobile = datum.create(Mobile, "Nokia", "Win8", "Lumia", 10000);
 var mobileClone = datum.clone(mobile);
 ```
 
-# Inheritance
+## Inheritance
 ```javaScript
 //Android
 var Android = datum.define({
@@ -71,7 +71,7 @@ var Android = datum.define({
     }    
 });
 ```
-# Browsers support
+## Browsers support
 - Internet Explorer 8+
 - Firefox 3.1+
 - Safari 4+
