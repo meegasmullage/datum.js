@@ -1,15 +1,15 @@
 # DatumJs
 Lightweight library which enables object oriented programming with JavaScript
 
-## How to use
-Simply include [datum.js](https://github.com/meegasmullage/datumjs/blob/master/datum.min.js) in to your project
+# How to use
+Simply include [datum.js](https://github.com/meegasmullage/datumjs/blob/master/datum.min.js) in to your project. [samples](https://github.com/meegasmullage/datumjs/blob/master/sample.js)
 
-## Features
+# Features
 - Support multi-level inheritance
-- Enables to access base class methods via **this.base**
+- Enables to access base class via **this.base** property
 
 
-## Methods
+# Methods
 - **define**: *define a class*
 ```javascript
 var Mobile = datum.define({
@@ -50,14 +50,14 @@ var mobile = datum.create(Mobile, "Nokia", "Win8", "Lumia", 10000);
 var mobileClone = datum.clone(mobile);
 ```
 
-## Inheritance
+# Inheritance
 ```javaScript
 //Android
 var Android = datum.define({
     //Meta data of the class
     __meta: {
         name: 'Android', // Name of the class
-        extends: Mobile // Inherit from Mobile
+        extends: Mobile // Base class object
     },
 
     //Constructor
@@ -71,27 +71,8 @@ var Android = datum.define({
     }    
 });
 ```
-
-## Note
-Following property & method **must** exists within the class
-- Property
-```javascript
-//defines meta data for class
-__meta: {
-    name: 'Android', // Name of the class
-    extends: Mobile // Base class object
-}
-```
-- Method
-```javascript    
-    //Constructor method of the class
-    constructor: function (){        
-    }    
-```
-## Brower support
+# Browsers support
 - Internet Explorer 8+
 - Firefox 3.1+
 - Safari 4+
 - Chrome 3+
-
-## [Samples](https://github.com/meegasmullage/datumjs/blob/master/sample.js)
