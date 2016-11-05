@@ -121,9 +121,12 @@
             var defClassObj = this.clone(defClass),
                 params = Array.prototype.slice.call(arguments, 1);
 
-            defClassObj.constructor.apply(defClassObj, params);
-
-            return defClassObj;
+            if (defClassObj.constructor) {
+                var propType = typeof (defClassObj.constructor);
+                if (propType === 'function') {
+                    defClassObj.constructor.apply(defClassObj, params);
+                }
+            } return defClassObj;
         };
     }; var datum = new fnDatum();
 
