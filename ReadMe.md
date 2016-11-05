@@ -2,7 +2,7 @@
 Lightweight library which enables object oriented programming with JavaScript
 
 ## How to use
-Simply include [datum.js](https://github.com/meegasmullage/datumjs/blob/master/datum.min.js) in to your project. [samples](https://github.com/meegasmullage/datumjs/blob/master/sample.js)
+Simply include [datum.js](https://github.com/meegasmullage/datumjs/blob/master/datum.min.js) in to your project. [samples](https://github.com/meegasmullage/datumjs/tree/master/Samples)
 
 ## Features
 - Support multi-level inheritance
