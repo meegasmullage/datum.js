@@ -62,7 +62,7 @@ var Blackberry = datum.define({
 
     //Methods  
     getModel: function () {
-        return "This is Android Blackberry - " + this.model;
+        return "This is Android Blackberry - " + this.base.getModel();
     }
 });
 
